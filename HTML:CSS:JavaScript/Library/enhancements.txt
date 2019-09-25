@@ -1,0 +1,29 @@
+Remove Book:
+- Gives an administrator the opportunity to remove a book from the library.
+- In the HTML file I added an h3 element with it's innerHTML set to "Remove Book".
+- Below the h3 element is a form with two inputs for the book's Id, and the submit button.
+- In the JS file I added two functions, where one of them manipulates the DOM.
+- The first function is removeBook which finds the book in the libraryBooks global array using the inputted book Id. The book is then removed from the global array, the global variable numberOfBooks is decremented by one, and then the second function is called.
+- The second function is removeBookFromLibrary which deletes the row containing the book in the bookTable element.
+- The remaining books in the bookTable element have their bookId attributes set to their index in the book table (excluding the table header).
+- The preconditions for this function are that the book is not loaned out to any patron, and that a book with the inputted Id exists.
+
+Personal Info:
+- Gives a patron the opportunity to edit/change their name.
+- In effect, gives a patron or an administrator the opportunity to transfer this library card number to somebody else.
+- In the HTML file I added an h2 with it's innerHTML set to "Personal Info".
+- Below the h2 element is a form with three inputs for the patron's Id, patron's new name, and the submit button.
+- In the JS file I added two functions, where one of them manipulates the DOM.
+- The first function is changeName which finds the patron's Id and new name using the id selectors in the HTML file, it changes the value of the patron's name in the global patrons array, and then the second function is called.
+- The second function is changePatronName which locates the patron's div element in the DOM using the parameter patron's cardNumber attribute, and then changes the name attribute in the DOM.
+- The precondition for this section is that a patron exists such that it's cardNumber attribute is the same as the inputted "Patron Id".
+
+Remove Patron:
+- Gives an administrator the opportunity to remove a patron from the system.
+- In the HTML file I added an h3 element with it's innerHTML set to "Remove Patron".
+- Below the h3 element is a form with two inputs for the patron's Id, and the submit button.
+- In the JS file I added two functions, where one of them manipulates the DOM.
+- The first function is removePatron which finds the patron in the patrons global array using the inputted patron Id. The patron is then removed from the global array, the global variable numberOfPatrons is decremented by one, and then the second function is called.
+- The second function is removePatronFromSystem which deletes the div element of the patron.
+- The remaining patrons in the patronEntries element have their cardNumber attributes set to their index in the patrons div.
+- The preconditions for this function are that the patron is not loaning out any book, and that a patron with the inputted Id exists.

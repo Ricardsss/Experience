@@ -1,0 +1,191 @@
+
+
+**************************************************
+<Testing command>:
+node app.js --addRest "CSC309SushiAYCE" "only $19.99!" 
+
+Received output:
+----------------------------------------
+Added restaurant CSC309SushiAYCE.
+
+----------------------------------------
+========================================
+Expected output:
+----------------------------------------
+Added restaurant CSC309SushiAYCE.
+
+----------------------------------------
+Match: True
+**************************************************
+
+
+**************************************************
+<Testing command>:
+node app.js --addResv "CSC309SushiAYCE" "Mar 17 2019 18:15:00" 5 
+
+Received output:
+----------------------------------------
+Added reservation at CSC309SushiAYCE on March 17 2019 at 6:15 p.m. for 5 people.
+
+----------------------------------------
+========================================
+Expected output:
+----------------------------------------
+Added reservation at CSC309SushiAYCE on March 17 2019 at 6:15 p.m. for 5 people.
+
+----------------------------------------
+Match: True
+**************************************************
+
+
+**************************************************
+<Testing command>:
+node app.js --allRest 
+
+Received output:
+----------------------------------------
+CSC309SushiAYCE: only $19.99! - 0 active reservations
+CSC309SaladBar: half price Tuesday! - 0 active reservations
+
+----------------------------------------
+========================================
+Expected output:
+----------------------------------------
+CSC309SushiAYCE: only $19.99! - 0 active reservations
+CSC309SaladBar: half price Tuesday! - 0 active reservations
+
+----------------------------------------
+Match: True
+**************************************************
+
+
+**************************************************
+<Testing command>:
+node app.js --restInfo "CSC309SushiAYCE" 
+
+Received output:
+----------------------------------------
+CSC309SushiAYCE: only $19.99! - 0 active reservations
+
+----------------------------------------
+========================================
+Expected output:
+----------------------------------------
+CSC309SushiAYCE: only $19.99! - 0 active reservations
+
+----------------------------------------
+Match: True
+**************************************************
+
+
+**************************************************
+<Testing command>:
+node app.js --allResv "CSC309SushiAYCE" 
+
+Received output:
+----------------------------------------
+Reservations for CSC309SushiAYCE:
+- Mar 17 2019, 6:15 p.m., table for 5
+- Mar 18 2019, 6:15 p.m., table for 2
+- Mar 18 2019, 6:25 p.m., table for 8
+
+----------------------------------------
+========================================
+Expected output:
+----------------------------------------
+Reservations for CSC309SushiAYCE:
+- Mar 17 2019, 6:15 p.m., table for 5
+- Mar 18 2019, 6:15 p.m., table for 2
+- Mar 18 2019, 6:25 p.m., table for 8
+
+----------------------------------------
+Match: True
+**************************************************
+
+
+**************************************************
+<Testing command>:
+node app.js --hourResv "Mar 18 2019 18:15:00" 
+
+Received output:
+----------------------------------------
+Reservations in the next hour:
+- CSC309SaladBar: Mar 18 2019, 6:15 p.m., table for 2
+- CSC309: Mar 18 2019, 6:25 p.m., table for 8
+
+----------------------------------------
+========================================
+Expected output:
+----------------------------------------
+Reservations in the next hour:
+- CSC309SaladBar: Mar 18 2019, 6:15 p.m., table for 2
+- CSC309: Mar 18 2019, 6:25 p.m., table for 8
+
+----------------------------------------
+Match: True
+**************************************************
+
+
+**************************************************
+<Testing command>:
+node app.js --checkOff "CSC309SushiAYCE" 
+
+Received output:
+----------------------------------------
+Checked off reservation on Mar 17 2019, 6:15 p.m., table for 5
+
+----------------------------------------
+========================================
+Expected output:
+----------------------------------------
+Checked off reservation on Mar 17 2019, 6:15 p.m., table for 5
+
+----------------------------------------
+Match: True
+**************************************************
+
+
+**************************************************
+<Testing command>:
+node app.js --addDelay "CSC309SushiAYCE" 60 
+
+Received output:
+----------------------------------------
+Reservations for CSC309SushiAYCE:
+- Mar 17 2019, 6:15 p.m., table for 5
+
+----------------------------------------
+========================================
+Expected output:
+----------------------------------------
+Reservations for CSC309SushiAYCE:
+- Mar 17 2019, 6:15 p.m., table for 5
+
+----------------------------------------
+Match: True
+**************************************************
+
+
+**************************************************
+<Testing command>:
+node app.js --status 
+
+Received output:
+----------------------------------------
+Number of restaurants: 3
+Number of total reservations: 4
+Busiest restaurant: CSC309SushiAYCE
+System started at: Mar 17, 2019, 6:15 p.m.
+
+----------------------------------------
+========================================
+Expected output:
+----------------------------------------
+Number of restaurants: 3
+Number of total reservations: 4
+Busiest restaurant: CSC309SushiAYCE
+System started at: Mar 17, 2019, 6:15 p.m.
+
+----------------------------------------
+Match: True
+**************************************************

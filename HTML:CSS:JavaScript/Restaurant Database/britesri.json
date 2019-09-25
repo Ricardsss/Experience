@@ -1,0 +1,428 @@
+{
+  "stats": {
+    "suites": 10,
+    "tests": 30,
+    "passes": 30,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-04-09T18:32:04.363Z",
+    "end": "2019-04-09T18:32:04.756Z",
+    "duration": 393
+  },
+  "suites": [
+    {
+      "title": "Testing addRestaurant",
+      "tests": [
+        {
+          "title": "Function returns added restaurant",
+          "duration": 5,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns empty on duplicated restaurant",
+          "duration": 2,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Checking restaurants.json file ",
+          "duration": 5,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    },
+    {
+      "title": "Testing addReservation",
+      "tests": [
+        {
+          "title": "Function returns added reservation",
+          "duration": 6,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Checking restaurants.json file",
+          "duration": 17,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Checking reservations.json file",
+          "duration": 17,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    },
+    {
+      "title": "Testing getAllRestaurants",
+      "tests": [
+        {
+          "title": "Function returns empty restaurants.json",
+          "duration": 0,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns correct number of restaurants",
+          "duration": 16,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns correct restaurant array",
+          "duration": 16,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    },
+    {
+      "title": "Testing getAllRestaurantByName",
+      "tests": [
+        {
+          "title": "Function returns nonexistent restaurant",
+          "duration": 1,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns existing restaurant",
+          "duration": 16,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns existing restaurant with similar names",
+          "duration": 17,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    },
+    {
+      "title": "Testing getAllReservations",
+      "tests": [
+        {
+          "title": "Function returns empty with no reservations.json",
+          "duration": 0,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns all existing reservations",
+          "duration": 14,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns all existing reservations in order",
+          "duration": 13,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    },
+    {
+      "title": "Testing getAllReservationsForRestaurant",
+      "tests": [
+        {
+          "title": "Function returns empty with no restaurants",
+          "duration": 1,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns existing reservations for a restaurant",
+          "duration": 14,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns existing reservations for a restaurant in order",
+          "duration": 13,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    },
+    {
+      "title": "Testing getReservationsForHour",
+      "tests": [
+        {
+          "title": "Function returns correct reservation for test case 1",
+          "duration": 16,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns correct reservation for test case 2",
+          "duration": 16,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns correct reservation for test case 3",
+          "duration": 17,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    },
+    {
+      "title": "Testing checkOffEarliestReservation",
+      "tests": [
+        {
+          "title": "Function returns correct reservation",
+          "duration": 20,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Checking restaurants.json file",
+          "duration": 19,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Checking reservations.json file",
+          "duration": 19,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    },
+    {
+      "title": "Testing addDelayToReservations",
+      "tests": [
+        {
+          "title": "Function returns new reservations",
+          "duration": 17,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Function returns new reservations in order",
+          "duration": 17,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Checking reservations.json file",
+          "duration": 18,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    },
+    {
+      "title": "Testing getSystemStatus",
+      "tests": [
+        {
+          "title": "Checking restaurant update",
+          "duration": 16,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Checking reservation update",
+          "duration": 18,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "title": "Checking Busiest Restaurant Name update",
+          "duration": 17,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "Function returns added restaurant",
+      "duration": 5,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns empty on duplicated restaurant",
+      "duration": 2,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Checking restaurants.json file ",
+      "duration": 5,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns added reservation",
+      "duration": 6,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Checking restaurants.json file",
+      "duration": 17,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Checking reservations.json file",
+      "duration": 17,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns empty restaurants.json",
+      "duration": 0,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns correct number of restaurants",
+      "duration": 16,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns correct restaurant array",
+      "duration": 16,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns nonexistent restaurant",
+      "duration": 1,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns existing restaurant",
+      "duration": 16,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns existing restaurant with similar names",
+      "duration": 17,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns empty with no reservations.json",
+      "duration": 0,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns all existing reservations",
+      "duration": 14,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns all existing reservations in order",
+      "duration": 13,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns empty with no restaurants",
+      "duration": 1,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns existing reservations for a restaurant",
+      "duration": 14,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns existing reservations for a restaurant in order",
+      "duration": 13,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns correct reservation for test case 1",
+      "duration": 16,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns correct reservation for test case 2",
+      "duration": 16,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns correct reservation for test case 3",
+      "duration": 17,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns correct reservation",
+      "duration": 20,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Checking restaurants.json file",
+      "duration": 19,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Checking reservations.json file",
+      "duration": 19,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns new reservations",
+      "duration": 17,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Function returns new reservations in order",
+      "duration": 17,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Checking reservations.json file",
+      "duration": 18,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Checking restaurant update",
+      "duration": 16,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Checking reservation update",
+      "duration": 18,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "title": "Checking Busiest Restaurant Name update",
+      "duration": 17,
+      "result": "passed",
+      "err": {}
+    }
+  ]
+}

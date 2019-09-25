@@ -1,0 +1,17 @@
+[
+    {
+        "restaurant": "Red Lobster",
+        "time": "2019-03-18T01:15:00.000Z",
+        "people": 5
+    },
+    {
+        "restaurant": "Red Lobster",
+        "time": "2019-03-18T01:30:00.000Z",
+        "people": 5
+    },
+    {
+        "restaurant": "Fresh",
+        "time": "2019-03-20T04:30:00.000Z",
+        "people": 3
+    }
+]
