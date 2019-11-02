@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vue App</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+
+<body onload="load()">
+	
+	<div id="app">
+		<ul id="student-list">
+			<input id="name-input" class="search" type="text" onkeyup="nameSearch()" placeholder="Search by name">
+			<input id="tag-input" class="search" type="text" onkeyup="tagSearch()" placeholder="Search by tags">
+			<li v-for="(firstName, index) in studentFirstNames" class="student">
+				<div class="imageContainer"><img class="image" v-bind:src="pictures[index]"/></div>
+				<button class="expand-btn" v-bind:id="index" onclick="expand(id)">+</button>
+				<h3 class="name">{{ firstName }} {{ studentLastNames[index] }}</h3>
+				<p class="information">Email: {{ emails[index] }}</p>
+				<p class="information">Company: {{ companies[index] }}</p>
+				<p class="information">Skill: {{ skills[index] }}</p>
+				<p class="information average">Average: {{ averageGrades[index] }}%</p>
+				<ul class="grades">
+					<li v-for="(grade, gradeIndex) in listsOfGrades[index]">
+						Test {{ gradeIndex + 1 }}: &nbsp&nbsp&nbsp&nbsp{{ grade }}%
+					</li>
+					<ul class="tag-list">
+					</ul>
+					<input v-bind:id="index" class="add-tag-input" type="text" placeholder="Add a tag" onkeypress="addTag(event, id)">
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
