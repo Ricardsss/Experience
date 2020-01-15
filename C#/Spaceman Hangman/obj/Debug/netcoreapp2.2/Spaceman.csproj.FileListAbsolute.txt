@@ -1,0 +1,10 @@
+/Users/ricardobrites/Documents/Personal Projects/csharp-spaceman-starting/bin/Debug/netcoreapp2.2/Spaceman.deps.json
+/Users/ricardobrites/Documents/Personal Projects/csharp-spaceman-starting/bin/Debug/netcoreapp2.2/Spaceman.runtimeconfig.json
+/Users/ricardobrites/Documents/Personal Projects/csharp-spaceman-starting/bin/Debug/netcoreapp2.2/Spaceman.runtimeconfig.dev.json
+/Users/ricardobrites/Documents/Personal Projects/csharp-spaceman-starting/bin/Debug/netcoreapp2.2/Spaceman.dll
+/Users/ricardobrites/Documents/Personal Projects/csharp-spaceman-starting/bin/Debug/netcoreapp2.2/Spaceman.pdb
+/Users/ricardobrites/Documents/Personal Projects/csharp-spaceman-starting/obj/Debug/netcoreapp2.2/Spaceman.csprojAssemblyReference.cache
+/Users/ricardobrites/Documents/Personal Projects/csharp-spaceman-starting/obj/Debug/netcoreapp2.2/Spaceman.AssemblyInfoInputs.cache
+/Users/ricardobrites/Documents/Personal Projects/csharp-spaceman-starting/obj/Debug/netcoreapp2.2/Spaceman.AssemblyInfo.cs
+/Users/ricardobrites/Documents/Personal Projects/csharp-spaceman-starting/obj/Debug/netcoreapp2.2/Spaceman.dll
+/Users/ricardobrites/Documents/Personal Projects/csharp-spaceman-starting/obj/Debug/netcoreapp2.2/Spaceman.pdb
