@@ -1,0 +1,11 @@
+{
+  "name": "blog-posts",
+  "version": "1.0.0",
+  "description": "This is a blog posts API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Brites",
+  "license": "ISC"
+}
