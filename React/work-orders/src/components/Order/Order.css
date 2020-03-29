@@ -1,0 +1,72 @@
+.Order {
+    height: auto;
+    width: auto;
+    display: inline-block;
+    background-color: silver;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 75px;
+    margin-right: 75px;
+    border: 1px solid black;
+}
+
+.information-container {
+    text-align: left;
+}
+
+.information {
+    display: inline-block;
+}
+
+.info-list {
+    list-style: none;
+}
+
+.description {
+    text-align: left;
+    margin-left: 35px;
+    margin-right: 35px;
+    width: 350px;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+
+}
+
+.imageContainer {
+    width: 85px;
+    float: left;
+    margin-left: 15px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.deadline-container {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.worker-name {
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+}
+
+.info {
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+}
+
+.deadline {
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+    font-style: italic;
+}
+
+.order-name {
+    font-family: "Arial", sans-serif;
+    margin-top: 5px;
+    font-weight: bold;
+}
